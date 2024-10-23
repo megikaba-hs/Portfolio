@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(11, 13, 21);
+  font-family: Arial, sans-serif;
+  color: rgb(236, 239, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  margin: 0;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  color: rgb(144, 153, 171);
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.service-card {
+  border-radius: 20px;
+  width: 280px;
+  /* padding: 30px; */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.img-grid{
+  width: 215px;
+  /* margin-bottom: 200px; */
+}
+
+.img-room{
+  width: 375px;
+}
+
+.flexi{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

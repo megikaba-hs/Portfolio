@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale = 1.0" />
+
+    <title>Home</title>
+    <link rel="stylesheet" href="styling/main-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">About<span>Me.</span></div>
+      <ul>
+        <li><a href="#" id="homeLink">HOME</a></li>
+        <li><a href="#" id="aboutLink">ABOUT</a></li>
+        <li><a href="#" id="serviceLink">SERVICE</a></li>
+        <li><a href="#" id="portfolioLink">PORTFOLIO</a></li>
+        <li><a href="#" id="experiencesLink">RESUME</a></li>
+        <!-- do bej nje faqe per request te cv -->
+        <li><a href="#" id="aboutLink">BLOG</a></li>
+        <li><a href="#" id="contactLink">CONTACT</a></li>
+      </ul>
+
+      <div class="bx bx-menu" id="menu-icon" style="color: azure"></div>
+    </nav>
+
+    <section class="container">
+      <div class="content">
+        <div class="text-section">
+          <h2>Hello, Welcome</h2>
+          <h1>I'm Megi Kaba</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book..
+          </p>
+
+          <button class="btn">Contact me</button>
+          <!-- <a href="#" class="btn">Contact me</a> -->
+        </div>
+        <div class="image-section">
+          <img src="/photos/profile.jpg" alt="Megi Kaba" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("aboutLink")
+        .addEventListener("click", function () {
+          window.open("about-me.html");
+        });
+
+      // document.getElementById("homeLink").addEventListener("click", function() {
+      //     window.location.href = "home.html";
+      //     window.open("about-me.html");
+      // });
+
+      document
+        .getElementById("serviceLink")
+        .addEventListener("click", function () {
+          window.open("service.html");
+        });
+
+      document
+        .getElementById("portfolioLink")
+        .addEventListener("click", function () {
+          window.open("myportfolio.html");
+        });
+
+      document
+        .getElementById("contactLink")
+        .addEventListener("click", function () {
+          window.open("contact-me.html", "_blank");
+        });
+
+      document
+        .getElementById("experiencesLink")
+        .addEventListener("click", function () {
+          window.open("experiences.html");
+        });
+    </script>
+  </body>
+</html>
