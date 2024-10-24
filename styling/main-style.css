@@ -1,7 +1,5 @@
 body {
-  /* width: 100%; */
   background-color: rgb(24, 29, 40);
-  /* margin: 0; */
 }
 
 .main-container {
@@ -21,7 +19,7 @@ header {
 
 .logo {
   font-size: 1.5em;
-  color: rgb(237, 185, 70);
+  color: #ffcc00;;
   font-weight: bold;
 }
 .navlist {
@@ -59,7 +57,6 @@ header {
   justify-content: center;
   gap: 80px;
   margin: 80px;
-  /* width: 100%; */
   padding: 0;
 }
 
@@ -70,7 +67,7 @@ header {
 }
 
 .hello {
-  color: rgb(237, 185, 70);
+  color: #ffcc00;;
 }
 
 h3 {
@@ -84,7 +81,7 @@ h3 {
 }
 
 .contact-me {
-  background-color: rgb(237, 185, 70);
+  background-color: #ffcc00;;
   border-radius: 5px;
   width: max-content;
 }
@@ -107,8 +104,8 @@ h3 {
 }
 .text-section h2 {
   font-size: 1em;
-  color: rgb(237, 185, 70);
-  margin: 0 0 10px;
+  color: #ffcc00;;
+  margin: 0 0 20px;
 }
 .text-section h1 {
   font-size: 2.5em;
@@ -119,11 +116,11 @@ h3 {
 .text-section p {
   font-size: 1em;
   line-height: 1.5;
-  margin: 10px 0 20px;
+  margin: 40px 0 40px;
   color: rgb(150, 150, 170);
 }
 .text-section .btn {
-  background-color: rgb(237, 185, 70);
+  background-color: #ffcc00;;
   color: rgb(11, 13, 21);
   padding: 10px 20px;
   font-size: 1em;
@@ -134,11 +131,47 @@ h3 {
   text-decoration: none;
 }
 .text-section .btn:hover {
-  background-color: rgb(255, 200, 80);
+  background-color: #ffcc00;;
 }
 .image-section img {
   width: 100%;
   border-radius: 20px;
+}
+
+footer {
+  color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-contact {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer-contact h3 {
+  color: #ffcc00; 
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  color: #f5f5f5;
+}
+
+.footer-contact a{
+  color: #ffcc00; 
+  text-decoration: none;
+}
+
+.footer-contact a:hover{
+  text-decoration: underline;
 }
 
 /* responsive */
@@ -194,12 +227,21 @@ h3 {
   }
 
   .bx-x {
-    /* Style for the menu icon when toggled (e.g., rotating or changing appearance) */
     transform: rotate(90deg);
   }
   
   .navlist.open {
-    display: block; /* Show navlist when 'open' class is added */
+    display: block; 
+  }
+
+  .footer-contact h3 {
+    font-size: 20px;
+  }
+  .footer-contact p {
+    font-size: 15px;
+  }
+  footer{
+    font-size: 15px;
   }
 }
 
@@ -221,9 +263,19 @@ h3 {
     font-size: 25px;
 
   }
-
   .text-section p {
     font-size: 11px;
+  }
+
+  .footer-contact h3 {
+    font-size: 15px;
+  }
+  .footer-contact p {
+    font-size: 10px;
+  }
+
+  footer{
+    font-size: 10px;
   }
 
 }

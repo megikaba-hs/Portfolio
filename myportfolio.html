@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="styling/portfolio-style.css" />
   </head>
   <body>
-
-    <header style="width: 100%;">
-      <button style="float: right;"  onclick="redirectToMainPage()">
-        X
-      </button>
+    <header style="width: 100%">
+      <button style="float: right" onclick="redirectToMainPage()">X</button>
     </header>
     <section>
       <h2>My <span style="color: rgb(255, 212, 59)">Portfolio</span></h2>
@@ -20,31 +17,81 @@
         majority have suffered alteration in some form, by injected humour,
       </p>
       <div class="flexi">
-        <div class="service-card">
-          <img class="img-room" src="photos/room.jpg" alt="Digital Marketing Icon" />
+        <div class="service-card" onclick="showModal('photos/room.jpg')">
+          <img
+            class="img-room"
+            src="photos/room.jpg"
+            alt="Digital Marketing Icon"
+          />
         </div>
         <div class="services-container">
-        <div class="service-card">
-          <img class="img-grid" src="photos/laptopi.jpg" alt="Web Development Icon" />
-        </div>
-        <div class="service-card">
-          <img class="img-grid" src="photos/notebooks.jpg" alt="Creative Graphic Design Icon" />
-        </div>
-        <div class="service-card">
-          <img class="img-grid" src="photos/chaie.jpg" alt="Creative Graphic Design Icon" />
-        </div>
-        <div class="service-card">
-          <img class="img-grid" src="photos/corner.jpg" alt="Creative Graphic Design Icon" />
+          <div class="service-card" onclick="toggleZoom(this)">
+            <img
+              class="img-grid"
+              src="photos/laptopi.jpg"
+              alt="Web Development Icon"
+            />
+          </div>
+          <div class="service-card" onclick="toggleZoom(this)">
+            <img
+              class="img-grid"
+              src="photos/notebooks.jpg"
+              alt="Creative Graphic Design Icon"
+            />
+          </div>
+          <div class="service-card" onclick="toggleZoom(this)">
+            <img
+              class="img-grid"
+              src="photos/chaie.jpg"
+              alt="Creative Graphic Design Icon"
+            />
+          </div>
+          <div class="service-card" onclick="toggleZoom(this)">
+            <img
+              class="img-grid"
+              src="photos/corner.jpg"
+              alt="Creative Graphic Design Icon"
+            />
+          </div>
         </div>
       </div>
-      </div>
-   
     </section>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Zoomed Image" />
+      </div>
+
+      
     <script>
       function redirectToMainPage() {
-            window.location.href = "home.html";
-        }
-  </script>
+        window.location.href = "home.html";
+      }
 
+      function showModal(imageSrc) {
+        const modal = document.getElementById("myModal");
+        const modalImage = document.getElementById("modalImage");
+        modalImage.src = imageSrc; // Set the source of the modal image
+        modal.style.display = "flex"; // Show the modal
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none"; // Hide the modal
+      }
+
+      // Close modal when clicking outside the image
+      window.onclick = function (event) {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+      function toggleZoom(card) {
+        const img = card.querySelector("img");
+        img.classList.toggle("zoom");
+      }
+    </script>
   </body>
 </html>

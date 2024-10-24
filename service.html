@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Services</title>
     <link rel="stylesheet" href="styling/service-style.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <header style="width: 100%">
+      <button style="float: right" onclick="redirectToMainPage()">X</button>
+    </header>
 
-    <header style="width: 100%;">
-        <button style="float: right;"  onclick="redirectToMainPage()">
-          X
-        </button>
-      </header>
-
-    <section>
-        <h2>My <span style="color: rgb(255,212,59);">Service</span></h2>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+    <div class="main-container">
+      <section>
+        <h2>My <span style="color: rgb(255, 212, 59)">Service</span></h2>
+        <p>
+          I offer comprehensive full-stack web development services, from
+          creating responsive user interfaces to building robust backend systems
+          using Java and SpringBoot. I specialize in integrating APIs and
+          databases to ensure seamless functionality. Additionally, I provide
+          maintenance and optimization to enhance the performance and user
+          experience of existing web applications.
+        </p>
         <div class="services-container">
-            <div class="service-card">
-                <img src="photos/megaphone.png" alt="Digital Marketing Icon">
-                <!-- <i class="fa-solid fa-bullhorn" style="color: #FFD43B;"></i> -->
-                <h3>Digital Marketing</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-            </div>
-            <div class="service-card">
-                <img src="photos/cursor.png" alt="Web Development Icon">
-                <h3>Web Development</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-            </div>
-            <div class="service-card">
-                <img src="photos/vector.png" alt="Creative Graphic Design Icon">
-                <h3>Creative Graphic Design</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-            </div>
+          <div class="service-card">
+            <img src="photos/megaphone.png" alt="Digital Marketing Icon" />
+            <h3>Backend Development & API Integration</h3>
+            <p>
+              Developing robust backend systems, setting up databases, and
+              integrating APIs to ensure seamless data exchange.
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="photos/cursor.png" alt="Web Development Icon" />
+            <h3>Web Development</h3>
+            <p>
+              Building responsive and efficient web applications using Java,
+              SpringBoot, and front-end technologies like HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="photos/vector.png" alt="Creative Graphic Design Icon" />
+            <h3>WA Maintenance & Optimization</h3>
+            <p>
+              Improving existing web applications by optimizing code, fixing
+              bugs, and enhancing performance and user experience..
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
+    </div>
+
     <script>
-        function redirectToMainPage() {
-              window.location.href = "home.html";
-          }
+      function redirectToMainPage() {
+        window.location.href = "home.html";
+      }
     </script>
-</body>
+  </body>
 </html>

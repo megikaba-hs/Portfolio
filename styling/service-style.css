@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+.main-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 h2 {
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
@@ -18,14 +23,14 @@ h2 {
 
 p {
   color: rgb(144, 153, 171);
-  max-width: 500px;
-  /* text-align: center; */
+  max-width: 1000px;
   margin-bottom: 40px;
 }
 
 .services-container {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .service-card {
@@ -56,3 +61,27 @@ p {
   color: rgb(144, 153, 171);
   font-size: 0.9rem;
 }
+
+/* responsive */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+}
+
+

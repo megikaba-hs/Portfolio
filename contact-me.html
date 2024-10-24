@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
     <link rel="stylesheet" href="styling/contact-style.css" />
-
   </head>
   <body>
-    <header style="width: 100%;">
-      <button style="float: right;" onclick="redirectToMainPage()">
-        X
-      </button>
+    <header style="width: 100%">
+      <button style="float: right" onclick="redirectToMainPage()">X</button>
     </header>
     <section style="text-align: center">
       <h2>Contact<span style="color: rgb(255, 212, 59)">Me</span></h2>
@@ -45,24 +42,16 @@
           the majority have suffered alteration in some form,
         </p>
         <div class="social-icons">
-          <img src="photos/facebook.png" />
-          <img src="photos/twitter.png" />
-          <img src="photos/linkedin.png" />
-          <img src="photos/instagram.png" />
-          <img src="photos/youtube.png" />
-          <img src="photos/pinterest-logo.png" />
+          <img src="photos/facebook.png" id="facebook" />
+          <img src="photos/twitter.png" id="twitter" />
+          <img src="photos/linkedin.png" id="linkedin" />
+          <img src="photos/instagram.png" id="instagram" />
+          <img src="photos/youtube.png" id="youtube" />
+          <img src="photos/pinterest-logo.png" id="pinterest" />
         </div>
       </div>
     </section>
 
-    <script>
-        function redirectToMainPage() {
-              window.location.href = "home.html"; // Replace with your main page URL
-          }
-
-        //   function closePage() {
-        //     window.close();
-        // }
-    </script>
+ <script src="javascript/contact-me.js"></script>
   </body>
 </html>
