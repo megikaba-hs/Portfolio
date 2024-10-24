@@ -9,7 +9,7 @@
 </head>
 <body>
     <header style="width: 100%;">
-        <button style="float: right;" onclick="window.close()">
+        <button style="float: right;" onclick="redirectToMainPage()">
           X
         </button>
       </header>
@@ -32,9 +32,9 @@
     </section>
 
     <script>
-        function closePage() {
-          window.close();
-      }
-  </script>
+        function redirectToMainPage() {
+              window.location.href = "home.html";
+          }
+    </script>
 </body>
 </html>

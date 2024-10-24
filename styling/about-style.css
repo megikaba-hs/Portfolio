@@ -89,3 +89,49 @@ body {
 .text-section .btn:hover {
   background-color: rgb(255, 200, 80);
 }
+
+@media (max-width: 1024px) {
+  .image-section {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+  .image-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .image-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .text-section .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+
+  }
+  .text-section h2 {
+    font-size: 18px;
+  }
+
+  .text-section p {
+    font-size: 11px;
+  }
+}

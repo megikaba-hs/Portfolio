@@ -19,11 +19,3 @@ document
   .addEventListener("click", function () {
     window.open("experiences.html");
   });
-
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
-
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navlist.classList.toggle("open");
-};
