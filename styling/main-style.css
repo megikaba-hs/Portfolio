@@ -4,149 +4,162 @@ body {
   /* margin: 0; */
 }
 
-.navbar {
+.main-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 30px;
   background-color: rgb(11, 13, 21);
 }
-.navbar .logo {
+
+
+.logo {
   font-size: 1.5em;
   color: rgb(237, 185, 70);
   font-weight: bold;
 }
-.navbar .logo span {
-  color: white;
-}
-
-.navbar ul {
-  list-style: none;
+.navlist {
   display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-.navbar ul li {
-  display: inline;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: rgb(246, 246, 246);
-  font-size: 1em;
-  transition: color 0.3s;
-}
-.navbar ul li a:hover {
-  color: rgb(237, 185, 70);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
 }
 
-.main-content{
+.navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+}
+.navlist li {
+  list-style: none;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000l;
+}
+
+.main-content {
   display: flex;
   justify-content: center;
   gap: 80px;
   margin: 80px;
   /* width: 100%; */
   padding: 0;
-  
 }
 
-.right-writtings{
+.right-writtings {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.hello{
+.hello {
   color: rgb(237, 185, 70);
 }
 
-h3{
+h3 {
   color: white;
   font-weight: bold;
   font-size: 30px;
 }
 
-.description{
+.description {
   color: rgb(90, 96, 115);
 }
 
-.contact-me{
+.contact-me {
   background-color: rgb(237, 185, 70);
   border-radius: 5px;
   width: max-content;
-
 }
 
 .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px;
-      margin-top: 50px;
-  }
-  .content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      width: 90%;
-  }
-  .text-section {
-      max-width: 500px;
-  }
-  .text-section h2 {
-      font-size: 1em;
-      color: rgb(237, 185, 70);
-      margin: 0 0 10px;
-  }
-  .text-section h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-      margin: 10px 0;
-      color: white;
-  }
-  .text-section p {
-      font-size: 1em;
-      line-height: 1.5;
-      margin: 10px 0 20px;
-      color: rgb(150, 150, 170);
-  }
-  .text-section .btn {
-      background-color: rgb(237, 185, 70);
-      color: rgb(11, 13, 21);
-      padding: 10px 20px;
-      font-size: 1em;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
-  }
-  .text-section .btn:hover {
-      background-color: rgb(255, 200, 80);
-  }
-  .image-section img {
-      width: 500px;
-      border-radius: 20px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+}
+.text-section {
+  max-width: 500px;
+}
+.text-section h2 {
+  font-size: 1em;
+  color: rgb(237, 185, 70);
+  margin: 0 0 10px;
+}
+.text-section h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+.text-section p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 10px 0 20px;
+  color: rgb(150, 150, 170);
+}
+.text-section .btn {
+  background-color: rgb(237, 185, 70);
+  color: rgb(11, 13, 21);
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.text-section .btn:hover {
+  background-color: rgb(255, 200, 80);
+}
+.image-section img {
+  width: 500px;
+  border-radius: 20px;
+}
 
-  #menu-icon{
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1000l;
-  }
 /* responsive */
 
 @media (max-width: 1024px) {
-  .image-section{
+  header {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+  .image-section {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-width: 768px) {
-  .image-section{
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+  .image-section {
     width: 100%;
     height: auto;
     text-align: center;
@@ -157,17 +170,38 @@ h3{
     gap: 20px;
   }
 
-  .navbar ul{
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navlist {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    width: 250px;
+    background-color: rgb(11, 13, 21);
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+    text-align: center;
     display: none;
   }
 
-  #menu-icon{
+  .navlist a{
     display: block;
+    margin-left: 0;
+    margin: 10px 0;
   }
 
+  .bx-x {
+    /* Style for the menu icon when toggled (e.g., rotating or changing appearance) */
+    transform: rotate(90deg);
+  }
   
+  .navlist.open {
+    display: block; /* Show navlist when 'open' class is added */
+  }
 }
 
 @media (max-width: 480px) {
-
 }
