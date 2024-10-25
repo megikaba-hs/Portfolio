@@ -21,6 +21,7 @@ p {
   color: rgb(144, 153, 171);
   max-width: 700px;
   margin: 40px auto;
+  line-height: 1.5;
 }
 
 .contact-container {
@@ -59,6 +60,7 @@ p {
   resize: none;
   margin-bottom: 25px;
   width: 220px;
+  font-family: Arial, sans-serif;
 }
 
 .forms textarea {
@@ -71,6 +73,7 @@ p {
   width: 400px;
   height: 100px;
   margin-bottom: 25px;
+  font-family: Arial, sans-serif;
 }
 
 .contact-me {
@@ -91,4 +94,107 @@ img {
 .social-icons:hover{
   cursor: pointer;
   color: yellow;
+}
+
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    max-width: 300px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .forms textarea {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+
+  forms input {
+    width: 180px;
+    font-size: 0.8rem;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    max-width: 300px;
+    font-size: 0.85rem;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info b{
+    font-size: 0.9rem;
+  }
+
+  .contact-info span{
+    font-size: 0.8rem;
+  }
+
+  .contact-info p {
+    margin: 15px;
+  }
+
+  .forms textarea {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    max-width: 300px;
+    font-size: 0.85rem;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info b{
+    font-size: 0.8rem;
+  }
+
+  .contact-info span{
+    font-size: 0.7rem;
+  }
+
+  .contact-info p {
+    margin: 15px;
+  }
+
+  .forms textarea {
+    width: 250px;
+    font-size: 0.7rem;
+  }
+
+  forms input {
+    width: 180px;
+    font-size: 0.7rem;
+  }
+
 }

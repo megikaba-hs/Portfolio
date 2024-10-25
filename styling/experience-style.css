@@ -74,10 +74,10 @@ footer {
 /* responsive */
 
 @media (max-width: 1024px) {
-  header {
+  /* header {
     padding: 15px 3%;
-    transition: 0.2s;
-  }
+    transition: 0.2s;s
+  } */
 }
 
 @media (max-width: 768px) {
@@ -89,6 +89,11 @@ footer {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .paragraphs{
+    max-width: 500px;
+    line-height: 1.5;
   }
 }
 

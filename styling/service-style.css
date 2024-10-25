@@ -21,10 +21,11 @@ h2 {
   margin-bottom: 20px;
 }
 
-p {
-  color: rgb(144, 153, 171);
+.main-paragraph{
+  color: rgb(150, 150, 170);
   max-width: 1000px;
   margin-bottom: 40px;
+  line-height: 1.5;
 }
 
 .services-container {
@@ -91,11 +92,70 @@ footer {
     gap: 30px;
     flex-direction: column;
   }
+
+  .main-paragraph{
+    max-width:400px;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom p{
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .main-paragraph{
+    max-width:400px;
+    font-size: 0.9rem;
+  }
 
+  h2 {
+    font-size: 2rem;
+  }
+  .service-card h3 {
+    font-size: 1rem;
+  }
 
+  .service-card p {
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom p{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-paragraph{
+    max-width:380px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .service-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom p{
+    font-size: 0.8rem;
+  }
 }
 
 
