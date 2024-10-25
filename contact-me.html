@@ -13,33 +13,45 @@
     <section style="text-align: center">
       <h2>Contact<span style="color: rgb(255, 212, 59)">Me</span></h2>
       <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour,
+        Feel free to reach out via the contact form on this page, or connect
+        with me directly through email or social media. I look forward to
+        hearing from you!
       </p>
 
       <div class="contact-container">
         <div class="contact-info">
           <p>
-            <b>Address _ </b>
-            <span> 23 S 80 Road, Benedict, NE, 68316, United States</span>
+            <b>Address: &nbsp;</b>
+            <span>ST. Teodor Keko, Tirana, Albania</span>
           </p>
-          <p><b>Phone _ </b> <span> +01 123 456 789</span></p>
-          <p><b>Email _ </b> <span> abc.xyz@gmail.com</span></p>
-          <p><b>Website _ </b> <span> www.abc.xyz.com</span></p>
+          <p><b>Phone: &nbsp; </b> <span> +01 123 456 789</span></p>
+          <p>
+            <b>Email: &nbsp; </b> <span> megi.kaba@honestsolutions.co.uk</span>
+          </p>
+          <p><b>Website: &nbsp; </b> <span> www.megi-kaba.com</span></p>
         </div>
 
         <div class="forms">
-          <input type="text" placeholder="Name" />
-          <textarea placeholder="Message"></textarea>
-          <button class="contact-me">Contact us</button>
+          <input type="text" id="name" placeholder="Name" />
+          <small id="error-name" style="color: red"></small>
+
+          <textarea placeholder="Message" id="message"></textarea>
+          <small id="error-message" style="color: red;"></small>
+          <button class="contact-me" onclick="validateInputs()">
+            Contact us
+          </button>
         </div>
       </div>
 
       <div class="footer">
         <h2>AboutMe</h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form,
+          With a background in full stack and backend development, I specialize
+          in building user-friendly, efficient, and scalable software. I am
+          always exploring new technologies and approaches to deliver
+          high-quality solutions. Driven by curiosity and a passion for coding,
+          I enjoy bringing ideas to life through thoughtful design and clean
+          code.
         </p>
         <div class="social-icons">
           <img src="photos/facebook.png" id="facebook" />
@@ -52,6 +64,6 @@
       </div>
     </section>
 
- <script src="javascript/contact-me.js"></script>
+    <script src="javascript/contact-me.js"></script>
   </body>
 </html>

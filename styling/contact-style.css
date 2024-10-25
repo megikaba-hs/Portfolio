@@ -19,7 +19,7 @@ h2 {
 
 p {
   color: rgb(144, 153, 171);
-  max-width: 500px;
+  max-width: 700px;
   margin: 40px auto;
 }
 
@@ -86,4 +86,9 @@ img {
 
 .footer {
   margin-top: 100px;
+}
+
+.social-icons:hover{
+  cursor: pointer;
+  color: yellow;
 }
