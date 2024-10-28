@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Services</title>
     <link rel="stylesheet" href="styling/service-style.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
   </head>
   <body>
 
     <div class="main-container">
+      <header>
+        <!-- <a href="#" class="logo">About<span>Me.</span></a> -->
+        <h2>My <span style="color: rgb(255, 212, 59)">Service</span></h2>
+        <ul class="navlist">
+          <li><a href="#" onclick="redirectToMainPage()">HOME</a></li>
+          <li><a href="#" onclick="redirectToServices()">SERVICE</a></li>
+          <li><a href="#" onclick="redirectToPortfolio()">PORTFOLIO</a></li>
+          <li><a href="#" onclick="redirectToExperiences()">RESUME</a></li>
+          <li><a href="#" onclick="redirectToContact()">CONTACT</a></li>
+        </ul>
 
-      <header style="width: 100%">
-        <button style="float: right" onclick="redirectToMainPage()">X</button>
+        <div class="bx bx-menu" id="menu-icon" style="color: azure"></div>
       </header>
       <section>
-        <h2>My <span style="color: rgb(255, 212, 59)">Service</span></h2>
+       
         <p class="main-paragraph">
           I offer comprehensive full-stack web development services, from
           creating responsive user interfaces to building robust backend systems
@@ -59,10 +72,6 @@
       </footer>
     </div>
 
-    <script>
-      function redirectToMainPage() {
-        window.location.href = "home.html";
-      }
-    </script>
+    <script src="javascript/service.js"></script>
   </body>
 </html>

@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Experiences</title>
     <link rel="stylesheet" href="styling/experience-style.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
+  
   </head>
   <body>
-    <header style="width: 100%">
+    <!-- <header style="width: 100%">
       <button style="float: right" onclick="redirectToMainPage()">X</button>
-    </header>
+    </header> -->
 
     <div style="max-width: 1240px; margin: 0 auto">
-      <section>
+      <header>
+        <!-- <a href="#" class="logo">About<span>Me.</span></a> -->
         <h2>My <span style="color: rgb(255, 212, 59)">Experiences</span></h2>
+        <ul class="navlist">
+          <li><a href="#" onclick="redirectToMainPage()">HOME</a></li>
+          <li><a href="#" onclick="redirectToServices()">SERVICE</a></li>
+          <li><a href="#" onclick="redirectToPortfolio()">PORTFOLIO</a></li>
+          <li><a href="#" onclick="redirectToExperiences()">RESUME</a></li>
+          <li><a href="#" onclick="redirectToContact()">CONTACT</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon" style="color: azure"></div>
+      </header>
+      <section>
         <p class="paragraphs">
           Experienced in developing full stack web applications using React and
           Node.js, creating robust backend services with SpringBoot, and
@@ -24,7 +41,9 @@
           <div class="service-card">
             <p style="color: white">May 2021 - February 2023</p>
             <h3>Software Developer</h3>
-            <p class="paragraphs" style="font-weight: bold; color: white">Soft & Solution</p>
+            <p class="paragraphs" style="font-weight: bold; color: white">
+              Soft & Solution
+            </p>
             <p class="paragraphs">
               I worked as a full-stack developer using WLanguage, the
               proprietary programming language of the French platform PC Soft.
@@ -37,9 +56,13 @@
             </p>
           </div>
           <div class="service-card">
-            <p class="paragraphs" style="color: white">June 2023 - February 2024</p>
+            <p class="paragraphs" style="color: white">
+              June 2023 - February 2024
+            </p>
             <h3>Backend Developer</h3>
-            <p class="paragraphs" style="font-weight: bold; color: white">Gran IT</p>
+            <p class="paragraphs" style="font-weight: bold; color: white">
+              Gran IT
+            </p>
             <p class="paragraphs">
               I developed and maintained backend services using SpringBoot,
               focusing on building robust and scalable web applications. My role
@@ -53,7 +76,9 @@
           <div class="service-card">
             <p class="paragraphs" style="color: white">October 2024</p>
             <h3>Full Stack Developer</h3>
-            <p class="paragraphs" style="font-weight: bold; color: white">Honest Solutions</p>
+            <p class="paragraphs" style="font-weight: bold; color: white">
+              Honest Solutions
+            </p>
             <p class="paragraphs">
               During my internship, I worked on developing full-stack web
               applications using React for the front-end and Node.js for the
@@ -73,10 +98,6 @@
       </footer>
     </div>
 
-    <script>
-      function redirectToMainPage() {
-        window.location.href = "home.html";
-      }
-    </script>
+    <script src="javascript/experience.js"></script>
   </body>
 </html>

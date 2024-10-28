@@ -11,20 +11,72 @@ body {
 }
 
 .main-container {
-  max-width: 1240px;
+  max-width: 1240px; 
   margin: 0 auto;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(24, 29, 40);
+}
+
+
+.logo {
+  font-size: 1.5em;
+  color: #ffcc00;;
+  font-weight: bold;
+}
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+}
+.navlist li {
+  list-style: none;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000l;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px;
+  padding: 0;
+}
+
+
 h2 {
   color: rgb(255, 255, 255);
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .main-paragraph{
   color: rgb(150, 150, 170);
-  max-width: 1000px;
   margin-bottom: 40px;
+  margin-top: 40px;
   line-height: 1.5;
 }
 
@@ -37,7 +89,6 @@ h2 {
 .service-card {
   background-color: rgb(18, 23, 39);
   border-radius: 20px;
-  width: 280px;
   padding: 30px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -76,30 +127,72 @@ footer {
 }
 
 
-
 /* responsive */
 
 @media (max-width: 1024px) {
   header {
-    padding: 15px 3%;
     transition: 0.2s;
   }
 }
 
 @media (max-width: 768px) {
+  body{
+    padding: 25px;
+  }
+
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navlist {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    width: 250px;
+    background-color: rgb(24, 29, 40);;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+    text-align: center;
+    display: none;
+  }
+
+  .navlist a{
+    display: block;
+    margin-left: 0;
+    margin: 10px 0;
+  }
+
+  .bx-x {
+    transform: rotate(90deg);
+  }
+  
+  .navlist.open {
+    display: block; 
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .services-container {
     display: flex;
     gap: 30px;
     flex-direction: column;
+    margin: 0 auto;
   }
 
   .main-paragraph{
-    max-width:400px;
+    /* max-width:400px; */
     font-size: 1rem;
   }
 
   h2 {
     font-size: 2.2rem;
+  }
+  .service-card{
+    max-width: 350px;
   }
   .service-card h3 {
     font-size: 1.2rem;
@@ -115,44 +208,44 @@ footer {
 }
 
 @media (max-width: 480px) {
+  body{
+    padding: 16px;
+  }
   .main-paragraph{
     max-width:400px;
     font-size: 0.9rem;
   }
-
   h2 {
     font-size: 2rem;
   }
   .service-card h3 {
     font-size: 1rem;
   }
-
   .service-card p {
     font-size: 0.75rem;
   }
-
   .footer-bottom p{
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 320px) {
-  .main-paragraph{
-    max-width:380px;
-    font-size: 0.9rem;
+  body{
+    padding: 16px;
   }
-
+  .main-paragraph{
+    /* max-width:290px; */
+    font-size: 0.8rem;
+  }
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .service-card h3 {
     font-size: 1rem;
   }
-
   .service-card p {
     font-size: 0.75rem;
   }
-
   .footer-bottom p{
     font-size: 0.8rem;
   }

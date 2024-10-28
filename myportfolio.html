@@ -5,93 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styling/portfolio-style.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
+  
   </head>
   <body>
-    <header style="width: 100%">
-      <button style="float: right" onclick="redirectToMainPage()">X</button>
-    </header>
-    <section>
-      <h2>My <span style="color: rgb(255, 212, 59)">Portfolio</span></h2>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour,
-      </p>
-      <div class="flexi">
-        <div class="service-card" onclick="showModal('photos/room.jpg')">
-          <img
-            class="img-room"
-            src="photos/room.jpg"
-            alt="Digital Marketing Icon"
-          />
-        </div>
+    <div class="main-container">
+      <header>
+        <!-- <a href="#" class="logo">About<span>Me.</span></a> -->
+        <h2>My <span style="color: rgb(255, 212, 59)">Portfolio</span></h2>
+        <ul class="navlist">
+          <li><a href="#" onclick="redirectToMainPage()">HOME</a></li>
+          <li><a href="#" onclick="redirectToServices()">SERVICE</a></li>
+          <li><a href="#" onclick="redirectToPortfolio()">PORTFOLIO</a></li>
+          <li><a href="#" onclick="redirectToExperiences()">RESUME</a></li>
+          <li><a href="#" onclick="redirectToContact()">CONTACT</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon" style="color: azure"></div>
+      </header>
+
+      <section>
+        <p>
+          Explore a gallery of projects I've worked on, showcasing my skills in
+          web development, design, and problem-solving.
+        </p>
+
         <div class="services-container">
-          <div class="service-card" onclick="showModal('photos/laptopi.jpg')">
+          <div class="service-card" onclick="showModal('photos/santacasa.png')">
             <img
               class="img-grid"
-              src="photos/laptopi.jpg"
+              src="photos/santacasa.png"
               alt="Web Development Icon"
             />
           </div>
-          <div class="service-card" onclick="showModal('photos/notebooks.jpg')">
+          <div class="service-card" onclick="showModal('photos/login-cg.png')">
             <img
               class="img-grid"
-              src="photos/notebooks.jpg"
+              src="photos/login-cg.png"
               alt="Creative Graphic Design Icon"
             />
           </div>
-          <div class="service-card" onclick="showModal('photos/chaie.jpg')">
+          <div class="service-card" onclick="showModal('photos/ut-logo.png')">
             <img
               class="img-grid"
-              src="photos/chaie.jpg"
+              src="photos/ut-logo.png"
               alt="Creative Graphic Design Icon"
             />
           </div>
-          <div class="service-card" onclick="showModal('photos/corner.jpg')">
+          <div class="service-card" onclick="showModal('photos/ealbania.jpg')">
             <img
               class="img-grid"
-              src="photos/corner.jpg"
+              src="photos/ealbania.jpg"
               alt="Creative Graphic Design Icon"
             />
+          </div>
+
+          <div
+            class="service-card"
+            onclick="showModal('photos/mesdhetari.png')"
+          >
+            <img
+              class="img-grid"
+              src="photos/mesdhetari.png"
+              alt="Mesdhetar Icon"
+            />
+          </div>
+          <div class="service-card" onclick="showModal('photos/ashkja.jpg')">
+            <img class="img-grid" src="photos/ashkja.jpg" alt="ASHK Icon" />
           </div>
         </div>
-      </div>
-    </section>
+        <!-- </div> -->
 
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage" alt="Zoomed Image" />
-      </div>
+        <footer>
+          <div class="footer-bottom">
+            <p>© 2024 Megi Kaba. All rights reserved.</p>
+          </div>
+        </footer>
+      </section>
+    </div>
 
-      
-    <script>
-      function redirectToMainPage() {
-        window.location.href = "home.html";
-      }
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Zoomed Image" />
+    </div>
 
-      function showModal(imageSrc) {
-        const modal = document.getElementById("myModal");
-        const modalImage = document.getElementById("modalImage");
-        modalImage.src = imageSrc; // Set the source of the modal image
-        modal.style.display = "flex"; // Show the modal
-      }
-
-      function closeModal() {
-        const modal = document.getElementById("myModal");
-        modal.style.display = "none"; // Hide the modal
-      }
-
-      // Close modal when clicking outside the image
-      window.onclick = function (event) {
-        const modal = document.getElementById("myModal");
-        if (event.target === modal) {
-          closeModal();
-        }
-      };
-      function toggleZoom(card) {
-        const img = card.querySelector("img");
-        img.classList.toggle("zoom");
-      }
-    </script>
+    <script src="javascript/portfolio.js"></script>
   </body>
 </html>
