@@ -14,8 +14,15 @@ header {
   justify-content: space-between;
   padding: 15px 30px;
   background-color: rgb(11, 13, 21);
+  position: relative;
+  z-index: 10;
 }
 
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
 .logo {
   font-size: 1.5em;
@@ -27,6 +34,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .navlist a {
@@ -49,7 +58,7 @@ header {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1000l;
+  z-index: 1001;
 }
 
 .main-content {
@@ -232,6 +241,8 @@ footer {
   
   .navlist.open {
     display: block; 
+    position: absolute;
+    z-index: 10;
   }
 
   .footer-contact h3 {

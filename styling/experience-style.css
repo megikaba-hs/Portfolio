@@ -1,6 +1,5 @@
 body {
   background-color: rgb(24, 29, 40);;
-  
   font-family: Arial, sans-serif;
   color: rgb(236, 239, 244);
   display: flex;
@@ -11,10 +10,9 @@ body {
   margin: 0;
 }
 
-h2 {
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-  margin-bottom: 20px;
+.main-container {
+  max-width: 1240px; 
+  margin: 0 auto;
 }
 
 header {
@@ -23,6 +21,8 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(18, 23, 39);
+  position: relative;
+  z-index: 10;
 }
 
 .navlist {
@@ -30,6 +30,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .navlist a {
@@ -40,6 +42,7 @@ header {
   border-bottom: 2px solid transparent;
   transition: all 0.55s ease;
 }
+
 .navlist li {
   list-style: none;
 }
@@ -52,28 +55,33 @@ header {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1000l;
+  z-index: 1001;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .paragraphs {
   color: rgb(144, 153, 171);
-  max-width: 500px;
-  /* text-align: center; */
   margin-bottom: 20px;
+  margin-top: 40px;
   line-height: 1.5;
 }
 
 .services-container {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .service-card {
   background-color: rgb(18, 23, 39);
   border-radius: 20px;
-  width: 280px;
   padding: 30px;
-  /* text-align: center; */
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -113,16 +121,29 @@ footer {
 /* responsive */
 
 @media (max-width: 1024px) {
-.service-card{
-  max-width: 240px;
-}
+  header {
+    transition: 0.2s;
+  }
 }
 
 @media (max-width: 768px) {
+
+  body{
+    padding: 25px;
+  }
+
   .services-container {
     display: flex;
     gap: 30px;
     flex-direction: column;
+    margin: 0 auto;
+    
+  }
+  section {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   h2 {
@@ -130,7 +151,6 @@ footer {
   }
 
   .paragraphs{
-    max-width: 350px;
     line-height: 1.5;
   }
 
@@ -163,26 +183,30 @@ footer {
   
   .navlist.open {
     display: block; 
+    position: absolute;
+    z-index: 10;
+  }
+  .service-card{
+    max-width: 350px;
   }
 }
 
 @media (max-width: 480px) {
+  body{
+    padding: 16px;
+  }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .paragraphs{
-    font-size: 15px;
-    max-width: 300px;
+  max-width:400px;
+    font-size: 0.9rem;
   }
 
   body{
     padding: 25px;
-  }
-
-  .service-card{
-    max-width: 230px;
-    
   }
 
   .service-card h3 {
@@ -194,28 +218,23 @@ footer {
 @media (max-width: 320px) {
 
   body{
-    padding: 25px;
+    padding: 16px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   
   .paragraphs{
-    font-size: 15px;
-    max-width: 300px;
+    font-size: 0.8rem;
   }
 
-  .service-card{
-    max-width: 230px;
-    
-  }
   .service-card h3 {
     font-size: 1rem;
   }
 
   .footer-bottom p{
-    font-size: 13px;
+    font-size: 0.8rem;
   }
 
 }

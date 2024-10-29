@@ -26,9 +26,31 @@ document.getElementById("pinterest").addEventListener("click", function () {
   window.open("https://www.pinterest.com/pinterest/");
 });
 
+function redirectToAboutMe() {
+  window.location.href = "about-me.html";
+}
+
+function redirectToServices() {
+  window.location.href = "service.html";
+}
+
+function redirectToContact() {
+  window.location.href = "contact-me.html";
+}
+
+function redirectToPortfolio() {
+  window.location.href = "myportfolio.html";
+}
+
+function redirectToExperiences() {
+  window.location.href = "experiences.html";
+
+}
+
 function redirectToMainPage() {
   window.location.href = "home.html";
 }
+
 
 function validateInputs() {
   const name = document.getElementById("name").value.trim();

@@ -1,6 +1,5 @@
 body {
   background-color: rgb(11, 13, 21);
-
   font-family: Arial, sans-serif;
   color: rgb(236, 239, 244);
   display: flex;
@@ -11,18 +10,6 @@ body {
   margin: 0;
 }
 
-h2 {
-  color: rgb(255, 255, 255);
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-p {
-  color: rgb(144, 153, 171);
-  max-width: 700px;
-  margin: 40px auto;
-  line-height: 1.5;
-}
 .main-container {
   max-width: 1240px; 
   margin: 0 auto;
@@ -34,13 +21,18 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(24, 29, 40);
+  position: relative;
+  z-index: 10;
 }
+
 
 .navlist {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .navlist a {
@@ -63,8 +55,23 @@ header {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1000l;
+  z-index: 1001;
+
 }
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: rgb(144, 153, 171);
+  /* max-width: 700px; */
+  margin: 40px auto;
+  line-height: 1.5;
+}
+
 
 .contact-container {
   display: flex;
@@ -146,6 +153,10 @@ img {
 
 
 @media (max-width: 1024px) {
+  header {
+    transition: 0.2s;
+  }
+
   body{
     padding: 25px;
 }
@@ -189,10 +200,12 @@ img {
   
   .navlist.open {
     display: block; 
+    position: absolute;
+    z-index: 10;
   }
 
   p {
-    max-width: 300px;
+    /* max-width: 300px; */
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -201,6 +214,14 @@ img {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .contact-info{
+    margin: 0 auto;
+  }
+
+  .forms{
+    margin: 0 auto;
   }
 
   .forms textarea {
@@ -233,8 +254,9 @@ img {
     font-size: 1.5rem;
   }
 
+
+
   p {
-    max-width: 300px;
     font-size: 0.85rem;
   }
 
@@ -242,6 +264,14 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .contact-info{
+    margin: 0 auto;
+  }
+
+  .forms{
+    margin: 0 auto;
   }
   
   .contact-info b{
@@ -257,7 +287,7 @@ img {
   }
 
   .forms textarea {
-    width: 300px;
+    max-width: 300px;
   }
 
   .footer{
@@ -276,14 +306,14 @@ img {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   p {
-    max-width: 300px;
+    /* max-width: 300px; */
     font-size: 0.8rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
   }
 
   .contact-container {
@@ -305,12 +335,12 @@ img {
   }
 
   .forms textarea {
-    width: 250px;
+    max-width: 250px;
     font-size: 0.7rem;
   }
 
   .forms input {
-    width: 180px;
+    max-width: 180px;
     font-size: 0.7rem;
   }
 

@@ -21,19 +21,16 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(24, 29, 40);
-}
-
-
-.logo {
-  font-size: 1.5em;
-  color: #ffcc00;;
-  font-weight: bold;
+  /* position: relative; */
+  /* z-index: 10;  */
 }
 .navlist {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .navlist a {
@@ -44,6 +41,7 @@ header {
   border-bottom: 2px solid transparent;
   transition: all 0.55s ease;
 }
+
 .navlist li {
   list-style: none;
 }
@@ -56,16 +54,8 @@ header {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1000l;
+  z-index: 1001;
 }
-.main-content {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  margin: 80px;
-  padding: 0;
-}
-
 
 h2 {
   color: rgb(255, 255, 255);
@@ -168,7 +158,9 @@ footer {
   }
   
   .navlist.open {
-    display: block; 
+    display: block;
+    position: absolute;
+    z-index: 10; 
   }
 
   section{
@@ -184,7 +176,6 @@ footer {
   }
 
   .main-paragraph{
-    /* max-width:400px; */
     font-size: 1rem;
   }
 
@@ -234,7 +225,6 @@ footer {
     padding: 16px;
   }
   .main-paragraph{
-    /* max-width:290px; */
     font-size: 0.8rem;
   }
   h2 {

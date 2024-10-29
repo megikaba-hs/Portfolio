@@ -34,18 +34,17 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(11, 13, 21);
+  position: relative;
+  z-index: 10;
 }
 
-.logo {
-  font-size: 1.5em;
-  color: #ffcc00;
-  font-weight: bold;
-}
 .navlist {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  position: relative;
+  z-index: 10;
 }
 
 .navlist a {
@@ -68,7 +67,7 @@ header {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1000l;
+  z-index: 1001;
 }
 
 .services-container {
@@ -82,7 +81,6 @@ header {
   width: 280px;
   text-align: center;
   transition: transform 0.3s ease;
-
   overflow: hidden; /* Ensures zoomed image stays within bounds */
   position: relative;
   cursor: pointer;
@@ -207,6 +205,24 @@ footer {
 
   .navlist.open {
     display: block;
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 16px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 
@@ -215,8 +231,14 @@ footer {
     padding: 16px;
   }
 
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .services-container {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 
